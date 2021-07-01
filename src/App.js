@@ -1,7 +1,6 @@
+import './App.css';
 import PortfolioSite from './components/PortfolioSite';
 
-function App() {
+export default function App() {
   return <PortfolioSite />;
 }
-
-export default App;
