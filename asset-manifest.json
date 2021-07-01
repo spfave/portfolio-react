@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/spfave/portfolio-reactstatic/css/main.2ee9ec48.chunk.css",
-    "main.js": "/spfave/portfolio-reactstatic/js/main.7b7e3381.chunk.js",
-    "main.js.map": "/spfave/portfolio-reactstatic/js/main.7b7e3381.chunk.js.map",
-    "runtime-main.js": "/spfave/portfolio-reactstatic/js/runtime-main.9faaac6a.js",
-    "runtime-main.js.map": "/spfave/portfolio-reactstatic/js/runtime-main.9faaac6a.js.map",
-    "static/js/2.f0f5b643.chunk.js": "/spfave/portfolio-reactstatic/js/2.f0f5b643.chunk.js",
-    "static/js/2.f0f5b643.chunk.js.map": "/spfave/portfolio-reactstatic/js/2.f0f5b643.chunk.js.map",
-    "index.html": "/spfave/portfolio-reactindex.html",
-    "static/css/main.2ee9ec48.chunk.css.map": "/spfave/portfolio-reactstatic/css/main.2ee9ec48.chunk.css.map",
-    "static/js/2.f0f5b643.chunk.js.LICENSE.txt": "/spfave/portfolio-reactstatic/js/2.f0f5b643.chunk.js.LICENSE.txt"
+    "main.css": "/spfave/portfolio-react/static/css/main.2ee9ec48.chunk.css",
+    "main.js": "/spfave/portfolio-react/static/js/main.7b7e3381.chunk.js",
+    "main.js.map": "/spfave/portfolio-react/static/js/main.7b7e3381.chunk.js.map",
+    "runtime-main.js": "/spfave/portfolio-react/static/js/runtime-main.d2652da6.js",
+    "runtime-main.js.map": "/spfave/portfolio-react/static/js/runtime-main.d2652da6.js.map",
+    "static/js/2.f0f5b643.chunk.js": "/spfave/portfolio-react/static/js/2.f0f5b643.chunk.js",
+    "static/js/2.f0f5b643.chunk.js.map": "/spfave/portfolio-react/static/js/2.f0f5b643.chunk.js.map",
+    "index.html": "/spfave/portfolio-react/index.html",
+    "static/css/main.2ee9ec48.chunk.css.map": "/spfave/portfolio-react/static/css/main.2ee9ec48.chunk.css.map",
+    "static/js/2.f0f5b643.chunk.js.LICENSE.txt": "/spfave/portfolio-react/static/js/2.f0f5b643.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9faaac6a.js",
+    "static/js/runtime-main.d2652da6.js",
     "static/js/2.f0f5b643.chunk.js",
     "static/css/main.2ee9ec48.chunk.css",
     "static/js/main.7b7e3381.chunk.js"
