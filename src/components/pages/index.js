@@ -3,4 +3,9 @@ import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Skills from './Skills';
 
-export { About, Portfolio, Contact, Skills };
+export const pages = {
+  About: <About />,
+  Portfolio: <Portfolio />,
+  Contact: <Contact />,
+  Skills: <Skills />,
+};
