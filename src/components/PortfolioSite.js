@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-// import { About, Portfolio, Contact, Skills } from './pages';
-import { pages } from './pages';
+import { pageComponents } from './pages';
 
 export default function PortfolioSite() {
+  const pages = ['About', 'Portfolio', 'Contact', 'Skills'];
   const [page, setPage] = useState('About');
-  const handlePageSelection = (pageName) => setPage(pageName);
-  const renderContent = () => pages[page];
+  const handlePageChange = (pageName) => setPage(pageName);
+  const renderContent = () => pageComponents[page];
 
   return (
     <div>
-      <Header page={page} handlePageSelection={handlePageSelection} />
+      <Header pages={pages} page={page} handlePageChange={handlePageChange} />
       {renderContent()}
       <Footer />
     </div>

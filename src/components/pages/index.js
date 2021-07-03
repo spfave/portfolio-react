@@ -3,7 +3,7 @@ import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Skills from './Skills';
 
-export const pages = {
+export const pageComponents = {
   About: <About />,
   Portfolio: <Portfolio />,
   Contact: <Contact />,
