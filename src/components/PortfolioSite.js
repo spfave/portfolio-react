@@ -5,6 +5,7 @@ import { About, Portfolio, Contact, Skills } from './pages';
 
 export default function PortfolioSite() {
   const [page, setPage] = useState('About');
+  const handlePageSelection = (pageName) => setPage(pageName);
   const renderContent = () => {
     switch (page) {
       case 'About':
@@ -15,7 +16,6 @@ export default function PortfolioSite() {
         return <Contact />;
       case 'Skills':
         return <Skills />;
-
       default:
         break;
     }
@@ -23,9 +23,8 @@ export default function PortfolioSite() {
 
   return (
     <div>
-      <Header />
-      <About />
-      <Portfolio />
+      <Header page={page} handlePageSelection={handlePageSelection} />
+      {renderContent()}
       <Footer />
     </div>
   );

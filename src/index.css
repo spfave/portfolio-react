@@ -2,16 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Font import */
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
-* {
-  box-sizing: border-box;
+@layer base {
+  body {
+    @apply max-w-6xl mx-auto;
+  }
 }
 
-body {
-  margin: 0;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
+/* Font import */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');*/
