@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import { pageComponents } from './pages';
@@ -20,6 +20,7 @@ export default function PortfolioSite() {
               component={pageComponents[pageName]}
             />
           ))}
+          <Route render={() => <Redirect to='/' />} />
         </Switch>
       </BrowserRouter>
       <Footer />
