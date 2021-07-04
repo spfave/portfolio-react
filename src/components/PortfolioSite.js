@@ -7,21 +7,23 @@ export default function PortfolioSite() {
   const pages = ['About', 'Portfolio', 'Contact', 'Skills'];
 
   return (
-    <div>
+    <div className='flex flex-col w-full min-h-screen relative overflow-hidden'>
       <BrowserRouter>
         <Header pages={pages} />
-        <Switch>
-          {/*Default to About page*/}
-          <Route path='/' exact component={pageComponents['About']} />
-          {pages.map((pageName, index) => (
-            <Route
-              key={index}
-              path={`/${pageName.toLowerCase()}`}
-              component={pageComponents[pageName]}
-            />
-          ))}
-          <Route render={() => <Redirect to='/' />} />
-        </Switch>
+        <main className='flex-grow'>
+          <Switch>
+            {/*Default to About page*/}
+            <Route path='/' exact component={pageComponents['About']} />
+            {pages.map((pageName, index) => (
+              <Route
+                key={index}
+                path={`/${pageName.toLowerCase()}`}
+                component={pageComponents[pageName]}
+              />
+            ))}
+            <Route render={() => <Redirect to='/' />} />
+          </Switch>
+        </main>
       </BrowserRouter>
       <Footer />
     </div>
