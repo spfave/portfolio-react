@@ -4,8 +4,8 @@ import Contact from './Contact';
 import Skills from './Skills';
 
 export const pageComponents = {
-  About: <About />,
-  Portfolio: <Portfolio />,
-  Contact: <Contact />,
-  Skills: <Skills />,
+  About,
+  Portfolio,
+  Contact,
+  Skills,
 };
