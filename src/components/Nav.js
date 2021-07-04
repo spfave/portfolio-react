@@ -1,6 +1,10 @@
+import { useState } from 'react';
 import { MdMenu, MdClose } from 'react-icons/md';
 
 export default function Nav({ pages, page, handlePageChange }) {
+  const [showSideMenu, setShowSideMenu] = useState(false);
+  const toggleSideMenu = () => setShowSideMenu(!showSideMenu);
+
   return (
     <nav className='flex flex-col items-end'>
       <div>
@@ -15,17 +19,27 @@ export default function Nav({ pages, page, handlePageChange }) {
           ))}
         </div>
 
-        {/* Side Menu button on medium- screen */}
+        {/* Side Menu button on -medium screen */}
         <div className='md:hidden'>
-          <button className='text-gray-200 hover:text-gray-100 hover:bg-gray-600 p-2 rounded trans-ease-in'>
+          <button
+            className='text-gray-200 hover:text-gray-100 hover:bg-gray-600 p-2 rounded trans-ease-in'
+            onClick={toggleSideMenu}
+          >
             <MdMenu size='30px' />
           </button>
         </div>
       </div>
 
-      {/* Side menu on medium- screen */}
-      <div className='side-menu absolute right-0 inset-y-0 md:hidden flex flex-col items-end w-48 space-y-2  p-4 bg-gray-600 transform translate-x-full transition duration-200 ease-in-out'>
-        <button className='text-gray-200 hover:text-gray-100 hover:bg-gray-500 p-2 rounded'>
+      {/* Side menu on -medium screen */}
+      <div
+        className={`absolute right-0 inset-y-0 md:hidden flex flex-col items-end w-48 space-y-2  p-4 bg-gray-600 transform ${
+          showSideMenu ? '' : 'translate-x-full'
+        } transition duration-200 ease-in-out`}
+      >
+        <button
+          className='text-gray-200 hover:text-gray-100 hover:bg-gray-500 p-2 rounded'
+          onClick={toggleSideMenu}
+        >
           <MdClose size='30px' />
         </button>
         <div className='flex flex-col w-full space-y-2'>
@@ -59,7 +73,7 @@ function NavLinkSide({ pageName, handlePageChange }) {
     <a
       href={`#${pageName.toLowerCase()}`}
       onClick={() => handlePageChange(pageName)}
-      className='py-2 px-4 text-lg text-gray-200 hover:text-gray-100 hover:bg-gray-500 rounded trans-ease-in'
+      className='text-lg text-gray-200 hover:text-gray-100 hover:bg-gray-500 py-2 px-4 rounded trans-ease-in'
     >
       {pageName}
     </a>
