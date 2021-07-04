@@ -1,9 +1,14 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import { useClickOutside } from '../hooks/useClickOutside';
 import { MdMenu, MdClose } from 'react-icons/md';
 
 export default function Nav({ pages, page, handlePageChange }) {
   const [showSideMenu, setShowSideMenu] = useState(false);
   const toggleSideMenu = () => setShowSideMenu(!showSideMenu);
+  const hideSideMenu = () => setShowSideMenu(false);
+
+  const navRef = useRef();
+  useClickOutside(navRef, hideSideMenu);
 
   return (
     <nav className='flex flex-col items-end'>
@@ -32,6 +37,7 @@ export default function Nav({ pages, page, handlePageChange }) {
 
       {/* Side menu on -medium screen */}
       <div
+        ref={navRef}
         className={`absolute right-0 inset-y-0 md:hidden flex flex-col items-end w-48 space-y-2  p-4 bg-gray-600 transform ${
           showSideMenu ? '' : 'translate-x-full'
         } transition duration-200 ease-in-out`}
