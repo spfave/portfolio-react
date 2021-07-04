@@ -59,7 +59,7 @@ export default function Nav({ pages, page, handlePageChange }) {
   );
 }
 
-function NavLink({ pageName, handlePageChange }) {
+function NavLink({ pageName }) {
   return (
     <Link
       to={`/${pageName.toLowerCase()}`}
