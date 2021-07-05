@@ -1,7 +1,10 @@
+import './About.css';
+
 export default function About() {
   return (
-    <section className='flex md:flex-row'>
-      <div className='md:self-center md:w-1/2 p-6'>
+    <section className='flex flex-col md:flex-row'>
+      {/* md:self-center */}
+      <div className='flex flex-col justify-center items-center md:w-1/2 p-6'>
         <h3 className=''>
           Developer <span>&nbsp;&ndash;&nbsp;</span> Programmer{' '}
           <span>&nbsp;&ndash;&nbsp;</span> Tech Enthusiast
@@ -20,7 +23,7 @@ export default function About() {
           how products and services are designed, built, and maintained.
         </p>
       </div>
-      <div className='bg-landing bg-cover bg-center bg-no-repeat md:w-1/2'></div>
+      <div className='bg-landing bg-cover bg-center bg-no-repeat h-full md:w-1/2'></div>
     </section>
   );
 }
