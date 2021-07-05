@@ -1,15 +1,6 @@
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { iconLinks } from '../assets/data/portfolioData';
 
 export default function Footer() {
-  const iconLinks = [
-    {
-      Icon: FaLinkedin,
-      link: 'https://www.linkedin.com/in/sebastian-fav%C3%A8-8610ba7b/',
-    },
-    { Icon: FaGithub, link: 'https://github.com/spfave' },
-    { Icon: FaEnvelope, link: 'mailto:sebpfave@email.com' },
-  ];
-
   return (
     <footer className='flex flex-col space-y-4 p-4 bg-gray-700'>
       <div className='flex justify-center space-x-4'>

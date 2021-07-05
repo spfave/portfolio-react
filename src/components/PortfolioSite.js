@@ -2,10 +2,9 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import { pageComponents } from './pages';
+import { pages } from '../assets/data/portfolioData';
 
 export default function PortfolioSite() {
-  const pages = ['About', 'Portfolio', 'Contact', 'Skills'];
-
   return (
     <div className='flex flex-col min-h-screen relative overflow-hidden bg-gray-50 md:shadow-2xl'>
       <BrowserRouter>
