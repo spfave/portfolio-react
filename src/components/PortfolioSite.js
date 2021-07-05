@@ -9,7 +9,7 @@ export default function PortfolioSite() {
     <div className='flex flex-col min-h-screen relative overflow-hidden bg-gray-50 md:shadow-2xl'>
       <BrowserRouter>
         <Header pages={pages} />
-        <main className='flex-grow flex'>
+        <main className='flex-grow flex mt-20'>
           <Switch>
             {/*Default to About page*/}
             <Route path='/' exact component={pageComponents['About']} />
