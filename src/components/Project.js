@@ -23,12 +23,16 @@ export default function Project({ data }) {
           <a
             className='inline-block w-1/2 px-4 py-2 border-2 rounded-md border-gray-600 hover:border-gray-500 bg-gray-600 hover:bg-gray-500 text-gray-200 hover:text-gray-100 text-center font-bold trans-ease-in'
             href={data.link}
+            target='_blank'
+            rel='noreferrer'
           >
             Live App
           </a>
           <a
             className='inline-block w-1/2 px-4 py-2 border-2 rounded-md border-gray-300 hover:border-gray-400 hover:bg-gray-200 text-gray-500 hover:text-gray-600 text-center font-bold trans-ease-in'
             href={data.source}
+            target='_blank'
+            rel='noreferrer'
           >
             <FaCode className='inline' /> View Source
           </a>
