@@ -4,8 +4,7 @@ import './About.css';
 export default function About() {
   return (
     <section className='flex flex-col-reverse md:flex-row'>
-      {/* md:self-center */}
-      <div className='flex flex-col justify-center items-center space-y-4 md:w-1/2 p-6'>
+      <div className='flex flex-col justify-center items-center space-y-4 bg-gray-100 md:w-1/2 p-6'>
         <h3 className='text-center md:text-xl text-gray-700 font-bold uppercase mb-2'>
           Developer <span>&nbsp;&ndash;&nbsp;</span> Programmer{' '}
           <span>&nbsp;&ndash;&nbsp;</span> Tech Enthusiast
@@ -24,7 +23,7 @@ export default function About() {
         </p>
         <Link
           to={`/portfolio`}
-          className='border md:text-lg font-bold text-gray-700 hover:text-gray-200 hover:bg-gray-700 px-4 py-2 rounded-md trans-ease-in'
+          className='border border-gray-300 md:text-lg font-bold text-gray-700 hover:text-gray-200 hover:bg-gray-700 px-4 py-2 rounded-md trans-ease-in'
         >
           View Portfolio
         </Link>

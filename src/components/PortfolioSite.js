@@ -7,7 +7,7 @@ export default function PortfolioSite() {
   const pages = ['About', 'Portfolio', 'Contact', 'Skills'];
 
   return (
-    <div className='flex flex-col min-h-screen relative overflow-hidden'>
+    <div className='flex flex-col min-h-screen relative overflow-hidden bg-gray-50 md:shadow-2xl'>
       <BrowserRouter>
         <Header pages={pages} />
         <main className='flex-grow flex'>
