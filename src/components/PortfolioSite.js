@@ -7,10 +7,10 @@ export default function PortfolioSite() {
   const pages = ['About', 'Portfolio', 'Contact', 'Skills'];
 
   return (
-    <div className='flex flex-col w-full min-h-screen relative overflow-hidden'>
+    <div className='flex flex-col min-h-screen relative overflow-hidden'>
       <BrowserRouter>
         <Header pages={pages} />
-        <main className='flex-grow'>
+        <main className='flex-grow flex'>
           <Switch>
             {/*Default to About page*/}
             <Route path='/' exact component={pageComponents['About']} />
