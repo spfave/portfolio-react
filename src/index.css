@@ -6,6 +6,11 @@
   body {
     @apply max-w-6xl mx-auto;
   }
+  label,
+  input,
+  textarea {
+    @apply block;
+  }
 }
 
 @layer utilities {
