@@ -23,7 +23,7 @@ export default function About() {
         </p>
         <Link
           to={`/portfolio`}
-          className='border border-gray-300 md:text-lg font-bold text-gray-700 hover:text-gray-200 hover:bg-gray-700 px-4 py-2 rounded-md trans-ease-in'
+          className='border-2 rounded-md  border-gray-300 hover:border-gray-700 hover:bg-gray-700 text-gray-700 hover:text-gray-200 md:text-lg font-bold px-4 py-2 trans-ease-in'
         >
           View Portfolio
         </Link>
