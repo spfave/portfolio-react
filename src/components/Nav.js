@@ -64,7 +64,7 @@ export default function Nav({ pages, page, handlePageChange }) {
 function NavLink({ pageName }) {
   return (
     <Link
-      to={`/${pageName.toLowerCase()}`}
+      to={`/portfolio-react/${pageName.toLowerCase()}`}
       className='text-lg text-gray-300 hover:text-gray-200 hover:bg-gray-600 px-4 py-2 rounded trans-ease-in'
     >
       {pageName}
@@ -75,7 +75,7 @@ function NavLink({ pageName }) {
 function NavLinkSide({ pageName, handleLinkClick }) {
   return (
     <Link
-      to={`/${pageName.toLowerCase()}`}
+      to={`/portfolio-react/${pageName.toLowerCase()}`}
       onClick={() => handleLinkClick()}
       className='text-lg text-gray-200 hover:text-gray-100 hover:bg-gray-500 py-2 px-4 rounded trans-ease-in'
     >
