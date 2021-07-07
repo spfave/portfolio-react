@@ -33,28 +33,30 @@ export default function Nav({ pages, page, handlePageChange }) {
       </div>
 
       {/* Side menu on -medium screen */}
-      <div
+      <aside
         ref={navRef}
-        className={`absolute right-0 inset-y-0 md:hidden flex flex-col items-end w-48 space-y-2  p-4 bg-gray-600 transform ${
+        className={`absolute right-0 inset-y-0 md:hidden transform ${
           showSideMenu ? '' : 'translate-x-full'
-        } transition duration-200 ease-in-out`}
+        } transition duration-200 ease-in-out z-10`}
       >
-        <button
-          className='text-gray-200 hover:text-gray-100 hover:bg-gray-500 p-2 rounded'
-          onClick={toggleSideMenu}
-        >
-          <MdClose size='30px' />
-        </button>
-        <div className='flex flex-col w-full space-y-2'>
-          {pages.map((pageName, index) => (
-            <NavLinkSide
-              key={index}
-              pageName={pageName}
-              handleLinkClick={hideSideMenu}
-            />
-          ))}
+        <div className='flex flex-col flex-grow items-end w-48 h-screen space-y-2 p-4 bg-gray-600'>
+          <button
+            className='text-gray-200 hover:text-gray-100 hover:bg-gray-500 p-2 rounded'
+            onClick={toggleSideMenu}
+          >
+            <MdClose size='30px' />
+          </button>
+          <div className='flex flex-col w-full space-y-2'>
+            {pages.map((pageName, index) => (
+              <NavLinkSide
+                key={index}
+                pageName={pageName}
+                handleLinkClick={hideSideMenu}
+              />
+            ))}
+          </div>
         </div>
-      </div>
+      </aside>
     </nav>
   );
 }
