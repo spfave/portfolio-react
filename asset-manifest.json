@@ -1,20 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.75527090.chunk.css",
-    "main.js": "/portfolio-react/static/js/main.62838559.chunk.js",
-    "main.js.map": "/portfolio-react/static/js/main.62838559.chunk.js.map",
+    "main.css": "/portfolio-react/static/css/main.57e8c6cc.chunk.css",
+    "main.js": "/portfolio-react/static/js/main.6f785394.chunk.js",
+    "main.js.map": "/portfolio-react/static/js/main.6f785394.chunk.js.map",
     "runtime-main.js": "/portfolio-react/static/js/runtime-main.de6f51b1.js",
     "runtime-main.js.map": "/portfolio-react/static/js/runtime-main.de6f51b1.js.map",
-    "static/js/2.b4b8a0c8.chunk.js": "/portfolio-react/static/js/2.b4b8a0c8.chunk.js",
-    "static/js/2.b4b8a0c8.chunk.js.map": "/portfolio-react/static/js/2.b4b8a0c8.chunk.js.map",
+    "static/js/2.3fc2b400.chunk.js": "/portfolio-react/static/js/2.3fc2b400.chunk.js",
+    "static/js/2.3fc2b400.chunk.js.map": "/portfolio-react/static/js/2.3fc2b400.chunk.js.map",
     "index.html": "/portfolio-react/index.html",
-    "static/css/main.75527090.chunk.css.map": "/portfolio-react/static/css/main.75527090.chunk.css.map",
-    "static/js/2.b4b8a0c8.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.b4b8a0c8.chunk.js.LICENSE.txt"
+    "static/css/main.57e8c6cc.chunk.css.map": "/portfolio-react/static/css/main.57e8c6cc.chunk.css.map",
+    "static/js/2.3fc2b400.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.3fc2b400.chunk.js.LICENSE.txt",
+    "static/media/blog-create-post.95202450.png": "/portfolio-react/static/media/blog-create-post.95202450.png",
+    "static/media/index.css": "/portfolio-react/static/media/code-desk-md.035e67f8.jpg",
+    "static/media/expense-home.70311dce.png": "/portfolio-react/static/media/expense-home.70311dce.png",
+    "static/media/fitness-dashboard.7f1364f9.png": "/portfolio-react/static/media/fitness-dashboard.7f1364f9.png",
+    "static/media/foodfitness_home.553dec7b.png": "/portfolio-react/static/media/foodfitness_home.553dec7b.png",
+    "static/media/hiketracker_home.d2ccf1f2.png": "/portfolio-react/static/media/hiketracker_home.d2ccf1f2.png",
+    "static/media/weather_dashboard.de91eb05.png": "/portfolio-react/static/media/weather_dashboard.de91eb05.png"
   },
   "entrypoints": [
     "static/js/runtime-main.de6f51b1.js",
-    "static/js/2.b4b8a0c8.chunk.js",
-    "static/css/main.75527090.chunk.css",
-    "static/js/main.62838559.chunk.js"
+    "static/js/2.3fc2b400.chunk.js",
+    "static/css/main.57e8c6cc.chunk.css",
+    "static/js/main.6f785394.chunk.js"
   ]
 }
