@@ -81,6 +81,36 @@ export const projects = [
   },
 ];
 
+export const skills = {
+  frontEnd: {
+    title: 'Front End',
+    notes: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'JQuery',
+      'Bootstrap',
+      'Tailwind CSS',
+      'React',
+    ],
+  },
+  backEnd: {
+    title: 'Back End',
+    notes: [
+      'Node.js',
+      'Express',
+      'REST API  design',
+      'GraphQL',
+      'MySQL and Sequelize',
+      'MongoDB and Mongoose',
+    ],
+  },
+  devTools: {
+    title: 'Dev Tools',
+    notes: ['GitHub', 'VS Code', 'NPM'],
+  },
+};
+
 export const iconLinks = [
   {
     Icon: FaLinkedin,
