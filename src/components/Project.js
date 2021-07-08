@@ -12,7 +12,7 @@ export default function Project({ data }) {
           />
         </div>
         <div className='flex-grow p-4'>
-          <p className='font-bold mb-4'>{data.title}</p>
+          <h4 className='font-bold text-lg mb-4'>{data.title}</h4>
           <ul className='list-disc list-outside ml-8'>
             {data.notes.map((note, index) => (
               <li key={index}>{note}</li>
