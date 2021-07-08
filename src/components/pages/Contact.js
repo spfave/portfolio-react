@@ -5,7 +5,8 @@ export default function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [warnMsg, setWarnMsg] = useState('');
+  // const [warnMsg, setWarnMsg] = useState('');
+
   const formFieldStates = {
     name: setName,
     email: setEmail,
@@ -38,6 +39,7 @@ export default function Contact() {
       return;
     }
 
+    document.getElementById('contact-form').reset();
     setName('');
     setEmail('');
     setMessage('');
@@ -49,7 +51,10 @@ export default function Contact() {
         Lets Work Together
       </h2>
       <div className='max-w-3xl mx-auto py-4'>
-        <form action=''>
+        {/* <div className=''>
+          <p className=''>{warnMsg}</p>
+        </div> */}
+        <form id='contact-form' action=''>
           <FormLabel htmlFor='contactName' label='Name' />
           <FormInput
             id='contactName'
