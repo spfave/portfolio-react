@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { validateEmail } from '../../utils/validators';
 
 export default function Contact() {
   const [name, setName] = useState('');
@@ -21,6 +22,21 @@ export default function Contact() {
 
   const handleSendMessage = (event) => {
     event.preventDefault();
+
+    if (!name) {
+      console.log('Please provide your name');
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      console.log('Please provide a valid email');
+      return;
+    }
+
+    if (!message) {
+      console.log('Please provide a message to send');
+      return;
+    }
 
     setName('');
     setEmail('');
