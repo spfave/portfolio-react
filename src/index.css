@@ -6,6 +6,12 @@
   body {
     @apply max-w-6xl mx-auto;
   }
+
+  ul,
+  ol {
+    @apply space-y-2;
+  }
+
   label,
   input,
   textarea {
