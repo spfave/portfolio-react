@@ -9,7 +9,9 @@ This repository holds the source files for the personal portfolio website of Seb
 
 &nbsp;
 ## **[React Portfolio](https://spfave.github.io/portfolio-react)**
-![Portfolio website screenshot for Sebastian Favè](./assets/img/screenshot_portfolio.png)
+![React portfolio website landing page for Sebastian Favè](./assets/img/react-portfolio-home.png)
+![Demonstration of portfolio navigation](./assets/img/react-portfolio-nav.gif)
+![Demonstration of portfolio responsive design](./assets/img/react-portfolio-responsive.gif)
 
 &nbsp;
 ## **Technologies and Services**

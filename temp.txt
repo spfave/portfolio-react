@@ -1,24 +1,3 @@
-const [page, setPage] = useState('About');
-const renderPage = () => {
-  switch (page) {
-    case 'About':
-      return <About />;
-    case 'Portfolio':
-      return <About />;
-    case 'Contact':
-      return <About />;
-    case 'Skill':
-      return <About />;
-
-    default:
-      break;
-  }
-};
-
-
-
-
-
 Tailwind
 TravMedia
 https://www.youtube.com/watch?v=UBOj6rqRUME
@@ -29,8 +8,5 @@ https://www.youtube.com/watch?v=NRagrTU_v8o&list=PLJMOwCSkN_plKfQf1nQDRqJkfW_5Sr
 https://www.youtube.com/watch?v=puaX_nhTMRU
 https://www.youtube.com/watch?v=DOOoS6GHDw8
 
-
-Package.json
-// "start": "react-scripts start",
-// "build": "react-scripts build",
-// "test": "react-scripts test",
+React routes
+https://www.freecodecamp.org/news/a-complete-beginners-guide-to-react-router-include-router-hooks/
