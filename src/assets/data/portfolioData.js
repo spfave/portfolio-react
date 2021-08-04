@@ -107,7 +107,7 @@ export const skills = {
   },
   devTools: {
     title: 'Dev Tools',
-    notes: ['GitHub', 'VS Code', 'NPM'],
+    notes: ['Git', 'GitHub', 'VS Code', 'NPM'],
   },
 };
 
