@@ -7,24 +7,20 @@ import { pages } from '../assets/data/portfolioData';
 export default function PortfolioSite() {
   return (
     <div className="flex flex-col min-h-screen relative overflow-hidden bg-gray-50 md:shadow-2xl">
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <Header pages={pages} />
         <main className="flex-grow flex mt-16">
           <Switch>
             {/*Default to About page*/}
-            <Route
-              path="/portfolio-react/"
-              exact
-              component={pageComponents['About']}
-            />
+            <Route path="/" exact component={pageComponents['About']} />
             {pages.map((pageName, index) => (
               <Route
                 key={index}
-                path={`/portfolio-react/${pageName.toLowerCase()}`}
+                path={`/${pageName.toLowerCase()}`}
                 component={pageComponents[pageName]}
               />
             ))}
-            <Route render={() => <Redirect to="/portfolio-react" />} />
+            <Route render={() => <Redirect to="/" />} />
           </Switch>
         </main>
       </BrowserRouter>
