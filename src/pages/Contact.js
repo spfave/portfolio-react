@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { validateEmail } from '../../utils/validators';
+import { validateEmail } from '../utils/validators';
 
 export default function Contact() {
   const [name, setName] = useState('');
@@ -46,48 +46,46 @@ export default function Contact() {
   };
 
   return (
-    <section className='w-full p-8 bg-gray-100'>
-      <h2 className='py-4 text-center text-gray-600 text-2xl font-bold uppercase '>
+    <section className="w-full p-8 bg-gray-100">
+      <h2 className="py-4 text-center text-gray-600 text-2xl font-bold uppercase ">
         Lets Work Together
       </h2>
-      <div className='max-w-3xl mx-auto py-4'>
+      <div className="max-w-3xl mx-auto py-4">
         {/* <div className=''>
           <p className=''>{warnMsg}</p>
         </div> */}
-        <form id='contact-form' action=''>
-          <FormLabel htmlFor='contactName' label='Name' />
+        <form id="contact-form" action="">
+          <FormLabel htmlFor="contactName" label="Name" />
           <FormInput
-            id='contactName'
-            type='text'
-            name='name'
-            placeholder='Enter your name'
+            id="contactName"
+            type="text"
+            name="name"
+            placeholder="Enter your name"
             onChange={handleInputChange}
           />
 
-          <FormLabel htmlFor='contactEmail' label='Email' />
+          <FormLabel htmlFor="contactEmail" label="Email" />
           <FormInput
-            id='contactEmail'
-            type='email'
-            name='email'
-            placeholder='Enter your email'
+            id="contactEmail"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
             onChange={handleInputChange}
           />
 
-          <FormLabel htmlFor='contactMessage' label='Message' />
+          <FormLabel htmlFor="contactMessage" label="Message" />
           <textarea
-            id='contactMessage'
-            className='w-full mb-4 p-2 border-2 rounded-md border-gray-300'
-            name='message'
-            rows='3'
-            placeholder='Enter a message'
-            onChange={handleInputChange}
-          ></textarea>
+            id="contactMessage"
+            className="w-full mb-4 p-2 border-2 rounded-md border-gray-300"
+            name="message"
+            rows="3"
+            placeholder="Enter a message"
+            onChange={handleInputChange}></textarea>
 
           <button
-            className='w-full mt-4 px-4 py-2 border-2 rounded-md border-gray-600 hover:border-gray-500 bg-gray-600 hover:bg-gray-500 text-gray-200 hover:text-gray-100 text-center font-bold trans-ease-in'
-            type='submit'
-            onClick={handleSendMessage}
-          >
+            className="w-full mt-4 px-4 py-2 border-2 rounded-md border-gray-600 hover:border-gray-500 bg-gray-600 hover:bg-gray-500 text-gray-200 hover:text-gray-100 text-center font-bold trans-ease-in"
+            type="submit"
+            onClick={handleSendMessage}>
             Send Message
           </button>
         </form>
@@ -98,7 +96,7 @@ export default function Contact() {
 
 function FormLabel({ htmlFor, label }) {
   return (
-    <label className='px-2 py-1' htmlFor={htmlFor}>
+    <label className="px-2 py-1" htmlFor={htmlFor}>
       {label}
     </label>
   );
@@ -108,7 +106,7 @@ function FormInput({ id, type, name, placeholder, onChange }) {
   return (
     <input
       id={id}
-      className='w-full mb-4 p-2 border-2 rounded-md border-gray-300'
+      className="w-full mb-4 p-2 border-2 rounded-md border-gray-300"
       type={type}
       name={name}
       placeholder={placeholder}
