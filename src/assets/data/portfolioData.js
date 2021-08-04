@@ -114,7 +114,7 @@ export const skills = {
 export const iconLinks = [
   {
     Icon: FaLinkedin,
-    link: 'https://www.linkedin.com/in/sebastian-fav%C3%A8-8610ba7b/',
+    link: 'https://www.linkedin.com/in/sebastian-fave',
   },
   { Icon: FaGithub, link: 'https://github.com/spfave' },
   { Icon: FaEnvelope, link: 'mailto:sebpfave@email.com' },
