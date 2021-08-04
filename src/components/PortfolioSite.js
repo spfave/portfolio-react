@@ -7,7 +7,7 @@ import { pages } from '../assets/data/portfolioData';
 export default function PortfolioSite() {
   return (
     <div className="flex flex-col min-h-screen relative overflow-hidden bg-gray-50 md:shadow-2xl">
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/portfolio-react">
         <Header pages={pages} />
         <main className="flex-grow flex mt-16">
           <Switch>
@@ -16,6 +16,7 @@ export default function PortfolioSite() {
             {pages.map((pageName, index) => (
               <Route
                 key={index}
+                exact
                 path={`/${pageName.toLowerCase()}`}
                 component={pageComponents[pageName]}
               />
